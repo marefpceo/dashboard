@@ -1,3 +1,241 @@
 * {
     box-sizing: border-box;
+    font-size: 16pt;
+}
+
+body {
+    margin: 0;
+
+}
+
+h1 {
+    font-size: 20pt;
+    margin: 0;
+}
+
+h2 {
+    font-size: 16pt;
+}
+
+h3 {
+    font-size: 14pt;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    background-color: #0885fa;
+    border-radius: 20px;
+    border: none;
+    color: #ffffff;
+    width: 4.5rem;
+    height: 1.7rem;
+    font-size: .8rem;
+}
+
+.container {
+    background-color: #cad7e4;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    min-height: 100vh;
+}
+
+.icons {
+    width: 25px;
+    height: 25px
+}
+
+.card, 
+.a-card,
+.trend-card {
+    box-shadow: 2px 3px 4px #888888;
+}
+
+/*********** Header ***********/
+header {
+    background-color: #ffffff;
+    display: grid;
+    grid-column: 2 / 4;
+    row-gap: 20px;
+    padding: 10px 40px;
+    box-shadow: 0px 1px 7px #888888;
+}
+
+
+.header-top {
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr 2fr 5fr;
+    justify-items: start;
+    align-items: center;
+}
+
+.header-top input {
+    border-radius: 15px;
+    border: none;
+    background-color: #cad7e4;
+    width: 80%
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: 7% 62% 31%;
+    align-items: center;
+}
+
+.header-bottom span {
+    font-size: 1rem;
+}
+
+.header-buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 40px;
+}
+
+
+/*********** Sidebar ***********/
+aside {
+    grid-row: 1 / span 2;
+    background-color: #0885fa;
+    padding: 0 20px;
+    height: 100%;
+    row-gap: 20px;
+}
+
+aside ul {
+    margin: 0;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-self: start;
+    align-items: center;
+    column-gap: 10px;
+    padding-top: 20px;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+.nav,
+.nav-help {
+    margin: 10% 0;
+    padding: 5px 0;
+}
+
+.nav li,
+.nav-help li{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+
+
+/*********** Main Section ***********/
+.main {
+    grid-column: 2 / 4;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    margin: 0px;
+    padding: 0 30px 0 15px;
+}
+
+.card-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 7px;
+    border-left: 8px solid rgb(255, 174, 0);
+    padding: 30px 20px;
+}
+
+.card p {
+    font-size: 12pt;
+    width: 80%;
+}
+
+.card h3, 
+.card p {
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.card ul {
+    display: grid;
+    grid-template-columns: repeat(3, 10%);
+    margin-bottom: 0;
+    justify-content: end;
+}
+
+/*********** Main-Aside area ***********/
+.main-aside.cards {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+.a-card {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 20px;
+    border-radius: 7px;
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+.a-card p {
+    font-size: .7rem;
+    margin: 0;
+}
+
+.a-card h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+}
+
+.info:nth-child(1),
+.info:nth-child(2) {
+    border-bottom: 1px solid #888888;
+    padding-bottom: 15px;
+}
+
+.trending {
+    margin-top: 3rem;
+}
+
+.trend-card {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 30px;
+    border-radius: 7px;
+    background-color: #ffffff;
+    padding: 30px 15px;
+}
+
+.users {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+}
+
+.users h4,
+.users p {
+    margin: 0;
+    font-size: 12pt;
+    line-height: 1.1rem;
 }

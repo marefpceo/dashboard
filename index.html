@@ -9,132 +9,162 @@
     <script src='script.js' defer></script>
 </head>
 <body>
-    <header>
-        <div class='header-top'>
-            <input type='search' name='search-bar' id='site-search' />
-            <h2>Lamar Stevens</h2>
-        </div>
-        <div class='header-bottom'>
-            <h1>Lamar Stevens (@lamar)</h1>
-            <ul>
-                <li>New</li>
-                <li>Upload</li>
-                <li>Share</li>
+    <div class='container'>
+        <header>
+            <div class='header-top'>
+                    <img src='images/magnify.svg' class='icons' alt='Search icon'/>
+                    <input type='search' name='search-bar' id='site-search' />
+                    <img src='images/bell-ring-outline.svg' class='icons' alt=''/>
+                    <img src='images/customer-icon.png' width="75px" height="75px" alt='User Icon'/>
+                    <h2>Lamar Stevens</h2>
+            </div>
+            <div class='header-bottom'>
+                <img src='images/customer-icon.png' width="75px" height="75px" alt='User Icon'/>
+                <div>
+                    <span>Hi there,</span>
+                    <h1>Lamar Stevens (@lamar)</h1>
+                </div>
+                <div class='header-buttons'>
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </header>
+
+        <aside>
+            <div class='logo'>
+                <img src='images/logo_no_name.png' alt='Logo with letters L and S' width="100px"/>
+                <h1>Dashboard</h1>
+            </div>
+            <ul class="nav">
+                <li><img src='images/home.svg' class='icons' alt='Home icon'/>Home</li>
+                <li><img src='images/card.svg' class='icons' alt='Profile icon'/>Profile</li>
+                <li><img src='images/message-reply.svg' class='icons' alt='Message icon'/>Messages</li>
+                <li><img src='images/clock-time-three.svg' class='icons' alt='Clock icon'/>History</li>
+                <li><img src='images/file-document-multiple.svg' class='icons' alt='Tasks icon'/>Tasks</li>
+                <li><img src='images/account-group.svg' class='icons' alt='Group icon'/>Communities</li>
             </ul>
-        </div>
-    </header>
+            <ul class="nav-help">
+                <li><img src='images/cog.svg' class='icons' alt='Settings icon'/> Settings</li>
+                <li><img src='images/help-box.svg' class='icons' alt='Help icon'/> Support</li>
+                <li><img src='images/shield-check.svg' class='icons' alt='Privacy Icon'/> Privacy</li>
+            </ul>
+        </aside>
 
-    <aside>
-        <div class='logo'>
-            Dashboard
-        </div>
-        <ul>
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
-        </ul>
-        <ul>
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
-        </ul>
-    </aside>
-
-    <section class='main'>
-        <div class='main-cards'>
-            <h2>Your Projects</h2>
-            <div class='cards'>
-                <div class='card-1'>
-                    <h3>Super Cool Project</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, distinctio laudantium. Autem eaque corrupti enim.</p>
-                    <ul>
-                        <li>icon1</li>
-                        <li>icon2</li>
-                        <li>icon3</li>
-                    </ul>
-                </div>
-                <div class='card-2'>
-                    <h3>Less Cool Project</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, distinctio laudantium. Autem eaque corrupti enim.</p>
-                    <ul>
-                        <li>icon1</li>
-                        <li>icon2</li>
-                        <li>icon3</li>
-                    </ul>
-                </div>
-                <div class='card-3'>
-                    <h3>Impossible App</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, distinctio laudantium. Autem eaque corrupti enim.</p>
-                    <ul>
-                        <li>icon1</li>
-                        <li>icon2</li>
-                        <li>icon3</li>
-                    </ul>
-                </div>
-                <div class='card-4'>
-                    <h3>Easy Peasy App</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, distinctio laudantium. Autem eaque corrupti enim.</p>
-                    <ul>
-                        <li>icon1</li>
-                        <li>icon2</li>
-                        <li>icon3</li>
-                    </ul>
-                </div>
-                <div class='card-5'>
-                    <h3>Ad Blocker</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, distinctio laudantium. Autem eaque corrupti enim.</p>
-                    <ul>
-                        <li>icon1</li>
-                        <li>icon2</li>
-                        <li>icon3</li>
-                    </ul>
-                </div>
-                <div class='card-6'>
-                    <h3>Money Maker</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, distinctio laudantium. Autem eaque corrupti enim.</p>
-                    <ul>
-                        <li>icon1</li>
-                        <li>icon2</li>
-                        <li>icon3</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class='main-aside'>
-            <div class='announcements'>
-                <h3>Announcements</h3>
-                <div class='a-card'>
-                    <div class='info-1'>
-                        <h3>Site Maintenance</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+        <section class='main'>
+            <div class='main-cards'>
+                <h2>Your Projects</h2>
+                <div class='card-group'>
+                    <div class='card'>
+                        <h3>Super Cool Project</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, distinctio laudantium. Autem eaque corrupti enim.</p>
+                        <ul>
+                            <li><img src='images/star-plus-outline.svg' class='icons' alt='Star button'/></li>
+                            <li><img src='images/eye-plus-outline.svg' alt='Eye button' class='icons'/></li>
+                            <li><img src='images/share-variant-outline.svg' alt='Share icon' class='icons'/></li>
+                        </ul>
                     </div>
-                    <div class='info-2'>
-                        <h3>Community Share Day/h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                    <div class='card'>
+                        <h3>Less Cool Project</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, distinctio laudantium. Autem eaque corrupti enim.</p>
+                        <ul>
+                            <li><img src='images/star-plus-outline.svg' class='icons' alt='Star button'/></li>
+                            <li><img src='images/eye-plus-outline.svg' alt='Eye button' class='icons'/></li>
+                            <li><img src='images/share-variant-outline.svg' alt='Share icon' class='icons'/></li>
+                        </ul>
                     </div>
-                    <div class='info-3'>
-                        <h3>Updated Privacy Policy</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                    <div class='card'>
+                        <h3>Impossible App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, distinctio laudantium. Autem eaque corrupti enim.</p>
+                        <ul>
+                            <li><img src='images/star-plus-outline.svg' class='icons' alt='Star button'/></li>
+                            <li><img src='images/eye-plus-outline.svg' alt='Eye button' class='icons'/></li>
+                            <li><img src='images/share-variant-outline.svg' alt='Share icon' class='icons'/></li>
+                        </ul>
+                    </div>
+                    <div class='card'>
+                        <h3>Easy Peasy App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, distinctio laudantium. Autem eaque corrupti enim.</p>
+                        <ul>
+                            <li><img src='images/star-plus-outline.svg' class='icons' alt='Star button'/></li>
+                            <li><img src='images/eye-plus-outline.svg' alt='Eye button' class='icons'/></li>
+                            <li><img src='images/share-variant-outline.svg' alt='Share icon' class='icons'/></li>
+                        </ul>
+                    </div>
+                    <div class='card'>
+                        <h3>Ad Blocker</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, distinctio laudantium. Autem eaque corrupti enim.</p>
+                        <ul>
+                            <li><img src='images/star-plus-outline.svg' class='icons' alt='Star button'/></li>
+                            <li><img src='images/eye-plus-outline.svg' alt='Eye button' class='icons'/></li>
+                            <li><img src='images/share-variant-outline.svg' alt='Share icon' class='icons'/></li>
+                        </ul>
+                    </div>
+                    <div class='card'>
+                        <h3>Money Maker</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, distinctio laudantium. Autem eaque corrupti enim.</p>
+                        <ul>
+                            <li><img src='images/star-plus-outline.svg' class='icons' alt='Star button'/></li>
+                            <li><img src='images/eye-plus-outline.svg' alt='Eye button' class='icons'/></li>
+                            <li><img src='images/share-variant-outline.svg' alt='Share icon' class='icons'/></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-
-            <div class='trending'>
-                <h3>Trending
-                    <div class='trend-card'>
-                        <div class='users'>UserIcon1</div>
-                        <div class='users'>UserIcon2</div>
-                        <div class='users'>UserIcon3</div>
-                        <div class='users'>UserIcon4</div>
+            <div class='main-aside'>
+                <h2>Announcements</h2>
+                <div class='main-aside-cards'>
+                        <div class='a-card'>
+                            <div class='info'>
+                                <h4>Site Maintenance</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt rem, nemo atque error excepturi incidunt!</p>
+                            </div>
+                            <div class='info'>
+                                <h4>Community Share Day</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt rem, nemo atque error excepturi incidunt!</p>
+                            </div>
+                            <div class='info'>
+                                <h4>Updated Privacy Policy</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt rem, nemo atque error excepturi incidunt!</p>
+                            </div>
+                        </div>
+                    <div class='trending'>
+                        <h2>Trending</h2>
+                        <div class='trend-card'>
+                            <div class='users'>
+                                <img src='images/male-user-icon.png' alt='Male Icon'/>
+                                <div>
+                                    <h4>@mrUser</h4>
+                                    <p>App Developer</p>
+                                </div>
+                            </div>
+                            <div class='users'>
+                                <img src='images/male-user-icon.png' alt='Male Icon'/>
+                                <div>
+                                    <h4>@manager</h4>
+                                    <p>Project Manager</p>
+                                </div>
+                            </div>
+                            <div class='users'>
+                                <img src='images/male-user-icon.png' alt='Male Icon'/>
+                                <div>
+                                    <h4>@manager</h4>
+                                    <p>Project Manager</p>
+                                </div>
+                            </div>
+                            <div class='users'>
+                                <img src='images/male-user-icon.png' alt='Male Icon'/>
+                                <div>
+                                    <h4>@manager</h4>
+                                    <p>Project Manager</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </h3>
+                </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    </div>
 </body>
 </html>
